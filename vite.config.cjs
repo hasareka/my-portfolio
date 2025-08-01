@@ -1,7 +1,8 @@
-const { defineConfig } = require('vite');
-const react = require('@vitejs/plugin-react');
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-module.exports = defineConfig({
-  base: '/my-portfolio/',
+export default defineConfig({
   plugins: [react()],
+  // Remove or comment out the following if it exists:
+  // base: '/my-portfolio/',
 });
