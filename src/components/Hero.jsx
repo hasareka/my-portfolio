@@ -2,6 +2,7 @@ import React from "react";
 import profilePic from "../assets/profile.jpg";
 import Particles from "react-tsparticles";
 import { FaArrowDown } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 function Hero() {
   return (
@@ -41,6 +42,26 @@ function Hero() {
           >
             View My Projects
           </a>
+
+          {/* Social Icons */}
+          <div className="flex justify-center md:justify-start gap-6 mt-6 text-2xl">
+            <a
+              href="https://github.com/hasareka"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/hasareka/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-400"
+            >
+              <FaLinkedin />
+            </a>
+          </div>
         </div>
 
         {/* Profile Image */}
@@ -52,11 +73,6 @@ function Hero() {
           />
         </div>
       </div>
-
-      {/* Scroll Down Icon */}
-      {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
-        <FaArrowDown className="animate-bounce text-blue-400 text-2xl" />
-      </div> */}
     </section>
   );
 }
