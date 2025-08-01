@@ -18,8 +18,8 @@ const projects = [
       "AI-powered system for early detection and lifestyle-based prevention of CKD. Includes SHAP explainability and recommendation logic.",
     image: ckd,
     techIcons: [{ icon: pythonIcon, name: "Python" }],
-    github: "https://github.com/hasareka/ckd-prediction",
-    demo: "",
+    github: "https://github.com/hasareka/ckd-prediction",  // Replace with real link
+    demo: "", // optional
   },
   {
     title: "RelaxWiki - Web Based Booking System",
@@ -33,8 +33,8 @@ const projects = [
       { icon: angularIcon, name: "Angular" },
       { icon: springbootIcon, name: "Spring Boot" },
     ],
-    github: "https://github.com/relax-wiki-seekerscloud",
-    demo: "",
+    github: "https://github.com/relax-wiki-seekerscloud",  // Replace with real link
+    demo: "", // optional
   },
   {
     title: "Smart Bio Gas System",
@@ -43,8 +43,8 @@ const projects = [
       "Developed a microcontroller-based solution to address combustion fuel deficiency during the pandemic.",
     image: biogas,
     techIcons: [],
-    github: "https://github.com/hasareka/Smart-BioGas-System",
-    demo: "",
+    github: "https://github.com/hasareka/Smart-BioGas-System",  // Replace with real link
+    demo: "", // optional
   },
 ];
 
@@ -56,7 +56,6 @@ function Projects() {
         {projects.map((project, idx) => (
           <div
             key={idx}
-            data-aos="fade-up"
             className="bg-[#0f172a] rounded-3xl shadow-lg hover:shadow-2xl shadow-blue-500/10 transform hover:scale-105 transition-transform duration-300 overflow-hidden"
           >
             <img
@@ -83,6 +82,7 @@ function Projects() {
                 </div>
               )}
 
+              {/* GitHub / Demo Links */}
               <div className="flex gap-4 mt-4">
                 {project.github && (
                   <a

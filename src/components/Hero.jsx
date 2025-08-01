@@ -54,9 +54,9 @@ function Hero() {
       </div>
 
       {/* Scroll Down Icon */}
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
+      {/* <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
         <FaArrowDown className="animate-bounce text-blue-400 text-2xl" />
-      </div>
+      </div> */}
     </section>
   );
 }
