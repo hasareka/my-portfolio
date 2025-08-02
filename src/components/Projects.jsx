@@ -2,6 +2,7 @@ import React from "react";
 import biogas from "../assets/biogas.png";
 import ckd from "../assets/ckd2.png";
 import relaxwiki from "../assets/relaxwiki.png";
+import portfolio from "../assets/portfolio.png"; // Add a screenshot for your portfolio website
 
 // Tech stack icons
 import pythonIcon from "../assets/python.png";
@@ -9,8 +10,15 @@ import javaIcon from "../assets/java.png";
 import mysqlIcon from "../assets/mysql.png";
 import springbootIcon from "../assets/springboot.png";
 import angularIcon from "../assets/angular.png";
+import reactIcon from "../assets/react.png";
+import tailwindIcon from "../assets/tailwind.png";
+import cIcon from "../assets/cIcon.png";
+import atmega from "../assets/atmega.png";
+import kicad from "../assets/kicad.png";
+import proteusIcon from "../assets/proteusIcon.png";
 
 const projects = [
+
   {
     title: "Predictive Analysis for Chronic Kidney Diseases",
     category: "Final Year Research Project",
@@ -18,8 +26,8 @@ const projects = [
       "AI-powered system for early detection and lifestyle-based prevention of CKD. Includes SHAP explainability and recommendation logic.",
     image: ckd,
     techIcons: [{ icon: pythonIcon, name: "Python" }],
-    github: "https://github.com/hasareka/ckd-prediction",  // Replace with real link
-    demo: "", // optional
+    github: "https://github.com/hasareka/ckd-prediction",
+    demo: "",
   },
   {
     title: "RelaxWiki - Web Based Booking System",
@@ -33,25 +41,46 @@ const projects = [
       { icon: angularIcon, name: "Angular" },
       { icon: springbootIcon, name: "Spring Boot" },
     ],
-    github: "https://github.com/relax-wiki-seekerscloud",  // Replace with real link
-    demo: "", // optional
+    github: "https://github.com/relax-wiki-seekerscloud",
+    demo: "",
+  },
+
+    {
+    title: "Personal Portfolio Website",
+    category: "Personal Project",
+    description:
+      "A responsive portfolio website built with React and Tailwind CSS, showcasing my work, skills, and contact information. Deployed via Vercel.",
+    image: portfolio,
+    techIcons: [
+      { icon: reactIcon, name: "React" },
+      { icon: tailwindIcon, name: "Tailwind CSS" },
+    ],
+    github: "https://github.com/hasareka/react-tailwind-portfolio", // Update if needed
+    demo: "https://my-portfolio-sand-six-29.vercel.app/",
   },
   {
-    title: "Smart Bio Gas System",
-    category: "First Year Hardware Project",
-    description:
-      "Developed a microcontroller-based solution to address combustion fuel deficiency during the pandemic.",
-    image: biogas,
-    techIcons: [],
-    github: "https://github.com/hasareka/Smart-BioGas-System",  // Replace with real link
-    demo: "", // optional
-  },
+  title: "Smart Bio Gas System",
+  category: "First Year Hardware Project",
+  description:
+    "Designed a smart, microcontroller-based biogas system to reduce LP gas usage and environmental pollution. Automatically switches between biogas and LP gas, detects gas leaks, and manages organic waste. Includes safety alerts and real-time display via LCD.",
+  image: biogas,
+  techIcons: [
+    { icon: cIcon, name: "C (AVR)" },
+    { icon: proteusIcon, name: "Proteus" },
+    { icon: kicad, name: "KiCad" },
+    { icon: atmega, name: "Atmega32" }
+  ],
+  github: "https://github.com/hasareka/Smart-BioGas-System",
+    demo: "",
+  }
 ];
+
 
 function Projects() {
   return (
     <section id="projects" className="py-20 px-6 md:px-12 bg-gray-900 text-white">
-      <h2 className="text-3xl font-bold text-center mb-10 text-blue-400">Projects</h2>
+      <h2 className="text-4xl font-bold text-center mb-10 text-blue-400">Projects</h2>
+              
       <div className="grid md:grid-cols-2 gap-10 max-w-6xl mx-auto">
         {projects.map((project, idx) => (
           <div
@@ -94,16 +123,7 @@ function Projects() {
                     GitHub
                   </a>
                 )}
-                {project.demo && (
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:underline text-sm"
-                  >
-                    Demo
-                  </a>
-                )}
+                
               </div>
             </div>
           </div>

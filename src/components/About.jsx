@@ -27,7 +27,7 @@ function About() {
         )}
 
         {/* Header */}
-        <h2 className="text-4xl font-bold mb-10 text-blue-400" data-aos="fade-right">
+        <h2 className="text-4xl font-bold text-center mb-10 text-blue-400" data-aos="fade-right">
           About Me
         </h2>
 
