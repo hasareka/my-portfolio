@@ -18,8 +18,8 @@ import kicad from "../assets/kicad.png";
 import proteusIcon from "../assets/proteusIcon.png";
 
 import cafejoy from "../assets/cafejoy.png"; // Your cafe screenshot
-import nodeIcon from "../assets/node.png";   // Node.js icon
-import expressIcon from "../assets/express.png"; // Optional: Express icon
+import nodeIcon from "../assets/nodejs.png";   // Node.js icon
+
 
 const projects = [
 
@@ -76,7 +76,7 @@ const projects = [
   ],
   github: "https://github.com/hasareka/Smart-BioGas-System",
     demo: "",
-  }
+  },
 
   {
     title: "Cafe Joy – Full Stack Coffee Shop Website",
@@ -86,13 +86,13 @@ const projects = [
     image: cafejoy,
     techIcons: [
       { icon: reactIcon, name: "React" },
-      // { icon: nodeIcon, name: "Node.js" },
-      // { icon: mysqlIcon, name: "MySQL" },
-      // { icon: tailwindIcon, name: "Tailwind CSS" },
+      { icon: nodeIcon, name: "Node.js" },
+      { icon: mysqlIcon, name: "MySQL" },
+      { icon: tailwindIcon, name: "Tailwind CSS" },
     ],
     github: "https://github.com/hasareka/cafe-joy", // Your new repo link
     demo: "", // Add link if you deploy it later
-  },
+  }
 ];
 
 
