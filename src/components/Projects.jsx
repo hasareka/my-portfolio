@@ -2,7 +2,7 @@ import React from "react";
 import biogas from "../assets/biogas.png";
 import ckd from "../assets/ckd2.png";
 import relaxwiki from "../assets/relaxwiki.png";
-import portfolio from "../assets/portfolio.png"; // Add a screenshot for your portfolio website
+import portfolio from "../assets/portfolio.png"; 
 
 // Tech stack icons
 import pythonIcon from "../assets/python.png";
@@ -16,6 +16,10 @@ import cIcon from "../assets/cIcon.png";
 import atmega from "../assets/atmega.png";
 import kicad from "../assets/kicad.png";
 import proteusIcon from "../assets/proteusIcon.png";
+
+import cafejoy from "../assets/cafejoy.png"; // Your cafe screenshot
+import nodeIcon from "../assets/node.png";   // Node.js icon
+import expressIcon from "../assets/express.png"; // Optional: Express icon
 
 const projects = [
 
@@ -73,6 +77,22 @@ const projects = [
   github: "https://github.com/hasareka/Smart-BioGas-System",
     demo: "",
   }
+
+  {
+    title: "Cafe Joy – Full Stack Coffee Shop Website",
+    category: "Personal Project",
+    description:
+      "A modern cafe website featuring a table reservation system, automated email confirmations via Nodemailer, and a secure admin dashboard to manage bookings.",
+    image: cafejoy,
+    techIcons: [
+      { icon: reactIcon, name: "React" },
+      // { icon: nodeIcon, name: "Node.js" },
+      // { icon: mysqlIcon, name: "MySQL" },
+      // { icon: tailwindIcon, name: "Tailwind CSS" },
+    ],
+    github: "https://github.com/hasareka/cafe-joy", // Your new repo link
+    demo: "", // Add link if you deploy it later
+  },
 ];
 
 
