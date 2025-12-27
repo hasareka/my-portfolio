@@ -1,5 +1,5 @@
 import React from "react";
-import profilePic from "../assets/profile.jpg";
+import profilePic from "../assets/new.png";
 import Particles from "react-tsparticles";
 import { FaArrowDown } from "react-icons/fa";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
