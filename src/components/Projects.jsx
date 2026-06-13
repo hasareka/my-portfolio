@@ -3,6 +3,8 @@ import biogas from "../assets/biogas.png";
 import ckd from "../assets/ckd2.png";
 import relaxwiki from "../assets/relaxwiki.png";
 import portfolio from "../assets/portfolio.png"; 
+import saucedemo from "../assets/saucedemo.png";
+
 
 // Tech stack icons
 import pythonIcon from "../assets/python.png";
@@ -19,6 +21,9 @@ import proteusIcon from "../assets/proteusIcon.png";
 
 import cafejoy from "../assets/cafejoy.png"; // Your cafe screenshot
 import nodeIcon from "../assets/nodejs.png";   // Node.js icon
+import seleniumIcon from "../assets/selenium.png"; // if you have one
+
+
 
 
 const projects = [
@@ -33,6 +38,21 @@ const projects = [
     github: "https://github.com/hasareka/ckd-prediction",
     demo: "",
   },
+  {
+  title: "SauceDemo QA Automation Framework",
+  category: "QA Automation Project",
+  description:
+    "End-to-end UI test automation framework for SauceDemo using Selenium WebDriver and TestNG. Implemented Page Object Model (POM), positive and negative login scenarios, cart and checkout flow tests, and reusable base test setup.",
+  image: saucedemo,
+  techIcons: [
+    { icon: javaIcon, name: "Java" },
+    // { icon: seleniumIcon, name: "Selenium" }, // optional
+    
+  ],
+  github: "https://github.com/hasareka/saucedemo-qa-automation",
+  demo: "",
+},
+
   {
     title: "RelaxWiki - Web Based Booking System",
     category: "Second Year Software Project",
