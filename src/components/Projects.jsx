@@ -46,7 +46,7 @@ const projects = [
   image: saucedemo,
   techIcons: [
     { icon: javaIcon, name: "Java" },
-    // { icon: seleniumIcon, name: "Selenium" }, // optional
+    { icon: seleniumIcon, name: "Selenium" }, 
     
   ],
   github: "https://github.com/hasareka/saucedemo-qa-automation",
